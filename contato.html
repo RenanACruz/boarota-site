@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoaRota - Contato</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="faixa-topo">
+    <p>Entre em contato com a BoaRota e tire suas dúvidas sobre nossas viagens.</p>
+  </div>
+
+  <header class="cabecalho">
+    <div class="logo">
+      <h1>BoaRota</h1>
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="personalizada.html">Viagem Personalizada</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina-topo">
+      <h2>Fale com a BoaRota</h2>
+      <p>
+        Preencha o formulário abaixo para entrar em contato, tirar dúvidas
+        ou demonstrar interesse em algum pacote de viagem.
+      </p>
+    </section>
+
+    <section class="contato-area">
+      <div class="form-contato">
+        <form id="formContato">
+          <div class="campo-form">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+          </div>
+
+          <div class="campo-form">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+          </div>
+
+          <div class="campo-form">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
+          </div>
+
+          <button type="button" class="botao" onclick="enviarContato()">
+            Enviar mensagem
+          </button>
+        </form>
+
+        <div id="resultado-contato" class="resultado-busca"></div>
+      </div>
+
+      <div class="info-contato">
+        <h3>Informações de contato</h3>
+        <p><strong>E-mail:</strong> contato@boarota.com</p>
+        <p><strong>Telefone:</strong> (11) 4000-1234</p>
+        <p><strong>Endereço:</strong> Av. BoaRota, 250 - São Paulo, SP</p>
+        <p><strong>Atendimento:</strong> Segunda a sexta, das 9h às 18h</p>
+        <p><strong>Redes sociais:</strong> Instagram | Facebook | WhatsApp</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <h3>BoaRota Turismo</h3>
+      <p>Viagens em grupo com praticidade, organização e novas experiências.</p>
+      <p>E-mail: contato@boarota.com</p>
+      <p>Telefone: (11) 4000-1234</p>
+      <p>Instagram | Facebook | WhatsApp</p>
+    </div>
+
+    <div class="rodape-final">
+      <p>&copy; 2026 BoaRota Turismo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoaRota - Viagem Personalizada</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="faixa-topo">
+    <p>Monte uma viagem do seu jeito com a BoaRota.</p>
+  </div>
+
+  <header class="cabecalho">
+    <div class="logo">
+      <h1>BoaRota</h1>
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="personalizada.html">Viagem Personalizada</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina-topo">
+      <h2>Crie sua viagem personalizada</h2>
+      <p>
+        Preencha as informações abaixo para encontrar uma opção de viagem
+        que combine com o seu perfil e com o seu grupo.
+      </p>
+    <section class="form-personalizado">
+  <form id="formPersonalizado">
+
+    <div class="campo-form">
+      <label for="destino">Destino desejado</label>
+      <input type="text" id="destino-personalizado" placeholder="Ex: Rio de Janeiro, Paris...">
+    </div>
+
+    <div class="campo-form">
+      <label for="pessoas">Quantidade de pessoas</label>
+      <input type="number" id="pessoas" placeholder="Ex: 4">
+    </div>
+
+    <div class="campo-form">
+      <label for="tipo">Tipo de viagem</label>
+      <select id="tipo-personalizado">
+        <option value="">Selecione</option>
+        <option value="praia">Praia</option>
+        <option value="aventura">Aventura</option>
+        <option value="cultural">Cultural</option>
+        <option value="descanso">Descanso</option>
+      </select>
+    </div>
+
+    <div class="campo-form">
+      <label for="orcamento">Orçamento aproximado</label>
+      <select id="orcamento-personalizado">
+        <option value="">Selecione</option>
+        <option value="2000">Até R$ 2.000</option>
+        <option value="5000">Até R$ 5.000</option>
+        <option value="mais">Acima de R$ 5.000</option>
+      </select>
+    </div>
+
+    <button type="button" class="botao" onclick="enviarFormulario()">
+      Montar viagem
+    </button>
+
+    <div id="resultado-personalizado" class="resultado-personalizado"></div>
+
+  </form>
+</section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <h3>BoaRota Turismo</h3>
+      <p>Viagens em grupo com praticidade, organização e novas experiências.</p>
+      <p>E-mail: contato@boarota.com</p>
+      <p>Telefone: (11) 4000-1234</p>
+    </div>
+
+    <div class="rodape-final">
+      <p>&copy; 2026 BoaRota Turismo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

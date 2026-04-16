@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fbfa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.faixa-topo {
+  background-color: #0E6973;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.cabecalho {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo h1 {
+  color: #0E6973;
+  font-size: 30px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #0E6973;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #F2BB16;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0;
+  background-color: #BAD9CE;
+  min-height: 430px;
+}
+
+.banner-texto {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-texto h2 {
+  font-size: 38px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  color: #0E6973;
+  max-width: 500px;
+}
+
+.banner-texto p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  max-width: 470px;
+}
+
+.botoes-banner {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #118C8C;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: #0E6973;
+}
+
+.botao-secundario {
+  background-color: #F2BB16;
+  color: #333;
+}
+
+.botao-secundario:hover {
+  background-color: #BF820F;
+  color: white;
+}
+
+.banner-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.93);
+}
+
+.banner-imagem {
+  width: 56%;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-imagem::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(186, 217, 206, 1) 0%,
+    rgba(186, 217, 206, 0.92) 8%,
+    rgba(186, 217, 206, 0.55) 16%,
+    rgba(186, 217, 206, 0.12) 26%,
+    rgba(186, 217, 206, 0) 34%
+  );
+  pointer-events: none;
+}
+
+.busca,
+.pacotes,
+.vantagens,
+.personalizada {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.busca h2,
+.pacotes h2,
+.vantagens h2,
+.personalizada h2 {
+  color: #0E6973;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+#formBusca {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.campo-form {
+  text-align: left;
+}
+
+.campo-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.campo-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.resultado-busca {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0E6973;
+}
+
+.cards-pacotes,
+.cards-vantagens {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-vantagem {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3,
+.card-vantagem h3 {
+  margin-bottom: 10px;
+  color: #118C8C;
+}
+
+.preco {
+  margin: 15px 0;
+  font-weight: bold;
+  color: #BF820F;
+}
+
+.personalizada {
+  background-color: #BAD9CE;
+}
+
+.personalizada p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.rodape {
+  background-color: #0E6973;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.rodape-conteudo h3 {
+  margin-bottom: 10px;
+}
+
+.rodape-conteudo p {
+  margin-bottom: 8px;
+}
+
+.rodape-final {
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .banner-texto h2 {
+    font-size: 32px;
+  }
+
+  .busca,
+  .pacotes,
+  .vantagens,
+  .personalizada {
+    padding: 40px 20px;
+  }
+}
+
+.pagina-topo {
+  padding: 50px 40px 20px;
+  text-align: center;
+}
+
+.pagina-topo h2 {
+  color: #0E6973;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.pagina-topo p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.form-personalizado {
+  padding: 50px 40px 70px;
+  display: flex;
+  justify-content: center;
+}
+
+#formPersonalizado {
+  width: 100%;
+  max-width: 600px;
+  display: grid;
+  gap: 20px;
+}
+
+.resultado-personalizado {
+  display: none;
+  margin-top: 10px;
+  padding: 14px 16px;
+  background-color: #BAD9CE;
+  border-left: 4px solid #118C8C;
+  border-radius: 8px;
+  color: #0E6973;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.sobre-conteudo {
+  padding: 20px 40px 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bloco-sobre {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.bloco-sobre h3 {
+  color: #118C8C;
+  margin-bottom: 10px;
+}
+
+.bloco-sobre p {
+  font-size: 17px;
+}
+
+.contato-area {
+  padding: 20px 40px 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.form-contato {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+}
+
+#formContato {
+  display: grid;
+  gap: 20px;
+}
+
+.campo-form input,
+.campo-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.info-contato {
+  background-color: #BAD9CE;
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.info-contato h3 {
+  color: #0E6973;
+  margin-bottom: 15px;
+}
+
+.info-contato p {
+  margin-bottom: 12px;
+}
+
+.card .botao {
+  margin-top: auto;
+}
+

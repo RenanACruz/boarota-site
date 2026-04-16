@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoaRota - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="faixa-topo">
+    <p>Viaje em grupo com mais praticidade, economia e novas experiências.</p>
+  </div>
+
+  <header class="cabecalho">
+    <div class="logo">
+      <h1>BoaRota</h1>
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="personalizada.html">Viagem Personalizada</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="banner-texto">
+        <h2>Descubra novos<br>
+  destinos com a BoaRota</h2>
+        <p>
+          A BoaRota é uma agência de viagens voltada para experiências em grupo,
+          oferecendo roteiros organizados, praticidade no planejamento e opções
+          para diferentes estilos de viagem.
+        </p>
+        <div class="botoes-banner">
+          <a href="#pacotes" class="botao">Ver pacotes</a>
+          <a href="personalizada.html" class="botao botao-secundario">Personalizar viagem</a>
+        </div>
+      </div>
+
+      <div class="banner-imagem">
+        <img src="img/viagem-principal.jpg" alt="Imagem de viagem">
+      </div>
+    </section>
+
+    <section class="busca">
+      <h2>Encontre sua próxima viagem</h2>
+
+      <form id="formBusca">
+        <div class="campo-form">
+          <label for="destino">Destino</label>
+          <select id="destino" name="destino">
+            <option value="">Selecione</option>
+            <option value="nacional">Nacional</option>
+            <option value="internacional">Internacional</option>
+          </select>
+        </div>
+
+        <div class="campo-form">
+          <label for="tipo">Tipo de viagem</label>
+          <select id="tipo" name="tipo">
+            <option value="">Selecione</option>
+            <option value="praia">Praia</option>
+            <option value="aventura">Aventura</option>
+            <option value="cultural">Cultural</option>
+            <option value="descanso">Descanso</option>
+          </select>
+        </div>
+
+        <div class="campo-form">
+          <label for="orcamento">Orçamento</label>
+          <select id="orcamento" name="orcamento">
+            <option value="">Selecione</option>
+            <option value="2000">Até R$ 2.000</option>
+            <option value="5000">Até R$ 5.000</option>
+            <option value="mais">Acima de R$ 5.000</option>
+          </select>
+        </div>
+
+        <button type="button" class="botao" onclick="buscarPacote()">Buscar opções</button>
+      </form>
+
+      <div id="resultado-busca" class="resultado-busca"></div>
+    </section>
+
+    <section class="pacotes" id="pacotes">
+      <h2>Pacotes em destaque</h2>
+
+      <div class="cards-pacotes">
+        <article class="card">
+          <img src="img/gramado.jpg" alt="Gramado">
+          <h3>Gramado</h3>
+          <p>Clima aconchegante, gastronomia e passeios em grupo.</p>
+          <p class="preco">A partir de R$ 1.890</p>
+          <a href="destinos.html" class="botao">Saiba mais</a>
+        </article>
+
+        <article class="card">
+          <img src="img/rio.jpg" alt="Rio de Janeiro">
+          <h3>Rio de Janeiro</h3>
+          <p>Paisagens marcantes, cultura e roteiro urbano.</p>
+          <p class="preco">A partir de R$ 2.150</p>
+          <a href="destinos.html" class="botao">Saiba mais</a>
+        </article>
+
+        <article class="card">
+          <img src="img/buenos-aires.jpg" alt="Buenos Aires">
+          <h3>Buenos Aires</h3>
+          <p>Uma opção internacional acessível e cheia de experiências.</p>
+          <p class="preco">A partir de R$ 3.290</p>
+          <a href="destinos.html" class="botao">Saiba mais</a>
+        </article>
+
+        <article class="card">
+          <img src="img/santiago.jpg" alt="Santiago">
+          <h3>Santiago</h3>
+          <p>Turismo urbano, compras e ótimos passeios em grupo.</p>
+          <p class="preco">A partir de R$ 3.750</p>
+          <a href="destinos.html" class="botao">Saiba mais</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="vantagens">
+      <h2>Por que escolher a BoaRota?</h2>
+
+      <div class="cards-vantagens">
+        <article class="card-vantagem">
+          <h3>Viagens em grupo</h3>
+          <p>
+            Roteiros pensados para pessoas que desejam compartilhar experiências
+            e aproveitar melhor cada destino.
+          </p>
+        </article>
+
+        <article class="card-vantagem">
+          <h3>Organização prática</h3>
+          <p>
+            Planejamento mais simples, com informações claras e opções para
+            diferentes perfis de viagem.
+          </p>
+        </article>
+
+        <article class="card-vantagem">
+          <h3>Mais segurança e suporte</h3>
+          <p>
+            Atendimento para orientar na escolha do roteiro e no preparo da viagem.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="personalizada">
+      <h2>Quer montar uma viagem do seu jeito?</h2>
+      <p>
+        Informe destino, orçamento e estilo de viagem para encontrar uma opção
+        mais próxima do que você procura.
+      </p>
+      <a href="personalizada.html" class="botao">Criar viagem personalizada</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <h3>BoaRota Turismo</h3>
+      <p>Viagens em grupo com praticidade, organização e novas experiências.</p>
+      <p>E-mail: contato@boarota.com</p>
+      <p>Telefone: (11) 4000-1234</p>
+      <p>Instagram | Facebook | WhatsApp</p>
+    </div>
+
+    <div class="rodape-final">
+      <p>&copy; 2026 BoaRota Turismo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
